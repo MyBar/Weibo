@@ -39,10 +39,10 @@ extension MBMainViewController {
     func setupChildControllers() {
         
         let array = [
-            ["clsName": "MBHomeViewController", "title": "首页", "imageName": ""],
-            ["clsName": "MBMessageViewController", "title": "消息", "imageName": ""],
-            ["clsName": "MBDiscoverViewController", "title": "发现", "imageName": ""],
-            ["clsName": "MBProfileViewController", "title": "我", "imageName": ""]
+            ["clsName": "MBHomeViewController", "title": "首页", "imageName": "home"],
+            ["clsName": "MBMessageViewController", "title": "消息", "imageName": "message_center"],
+            ["clsName": "MBDiscoverViewController", "title": "发现", "imageName": "discover"],
+            ["clsName": "MBProfileViewController", "title": "我", "imageName": "profile"]
         ]
         
         var arrayM = [UIViewController]()
@@ -68,6 +68,12 @@ extension MBMainViewController {
         let vc = cls.init()
         
         vc.title = title
+        
+        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: UIControlState.highlighted)
+        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 12)], for: UIControlState.normal)
+        
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
+        vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_selected")?.withRenderingMode(.alwaysOriginal)
         
         let nav = MBNavigationController(rootViewController: vc)
         
