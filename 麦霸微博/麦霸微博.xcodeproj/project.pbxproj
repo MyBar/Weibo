@@ -28,6 +28,7 @@
 		8DE09B8E1DFD59CE00F00DB7 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B801DFD59CE00F00DB7 /* UIScreen+CZAddition.m */; };
 		8DE09B8F1DFD59CE00F00DB7 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B821DFD59CE00F00DB7 /* UIView+CZAddition.m */; };
 		8DE09B901DFD59CE00F00DB7 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B841DFD59CE00F00DB7 /* UIViewController+CZAddition.m */; };
+		8DE09B931DFD68C100F00DB7 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B921DFD68C100F00DB7 /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		8DE09B821DFD59CE00F00DB7 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
 		8DE09B831DFD59CE00F00DB7 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
 		8DE09B841DFD59CE00F00DB7 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		8DE09B921DFD68C100F00DB7 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		8DE09B511DFD543B00F00DB7 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				8DE09B911DFD688E00F00DB7 /* Extensions */,
 				8DE09B6B1DFD59CE00F00DB7 /* Additions */,
 			);
 			path = "Tools(工具)";
@@ -228,6 +231,14 @@
 			path = Additions;
 			sourceTree = "<group>";
 		};
+		8DE09B911DFD688E00F00DB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DE09B921DFD68C100F00DB7 /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,6 +313,7 @@
 			files = (
 				8DE09B8C1DFD59CE00F00DB7 /* UIColor+CZAddition.m in Sources */,
 				8DE09B851DFD59CE00F00DB7 /* NSArray+Log.m in Sources */,
+				8DE09B931DFD68C100F00DB7 /* Bundle+Extensions.swift in Sources */,
 				8DE09B5C1DFD54E200F00DB7 /* MBNavigationController.swift in Sources */,
 				8DE09B8D1DFD59CE00F00DB7 /* UILabel+CZAddition.m in Sources */,
 				8DE09B861DFD59CE00F00DB7 /* NSAttributedString+CZAdditon.m in Sources */,
