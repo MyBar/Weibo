@@ -9,38 +9,51 @@
 import UIKit
 
 class MBMainViewController: UITabBarController {
+    
+    lazy var composeButton: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName:"tabbar_compose_button")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupChildControllers()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupComposeButton()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func composeStatus(sender: AnyObject) {
+        if sender.isKind(of: UILongPressGestureRecognizer.self) {
+            print("-----UILongPressGestureRecognizer-----\(sender)")
+        }else {
+            print("-----\(sender)-----")
+        }
     }
-    */
 
 }
 
 extension MBMainViewController {
+    
+    func setupComposeButton() {
+        
+        tabBar.addSubview(composeButton)
+        
+        let count = CGFloat(childViewControllers.count)
+        
+        let width = tabBar.bounds.width / count
+        
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2 * width, dy: 0)
+        
+        composeButton.addTarget(self, action: #selector(composeStatus(sender:)), for: .touchUpInside)
+        
+        composeButton.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(composeStatus(sender:))))
+        
+    }
     
     func setupChildControllers() {
         
         let array = [
             ["clsName": "MBHomeViewController", "title": "首页", "imageName": "home"],
             ["clsName": "MBMessageViewController", "title": "消息", "imageName": "message_center"],
+            ["clsName": "UIViewController"],
             ["clsName": "MBDiscoverViewController", "title": "发现", "imageName": "discover"],
             ["clsName": "MBProfileViewController", "title": "我", "imageName": "profile"]
         ]
