@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D367F331E18F65400B0959C /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D367F321E18F65400B0959C /* UIBarButtonItem+Extensions.swift */; };
+		8D367F361E18FBB400B0959C /* MBComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D367F351E18FBB400B0959C /* MBComposeViewController.swift */; };
 		8DE09B3E1DFD3E3000F00DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B3D1DFD3E3000F00DB7 /* AppDelegate.swift */; };
 		8DE09B451DFD3E3000F00DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE09B441DFD3E3000F00DB7 /* Assets.xcassets */; };
 		8DE09B5A1DFD54B200F00DB7 /* MBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B591DFD54B200F00DB7 /* MBMainViewController.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D367F321E18F65400B0959C /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		8D367F351E18FBB400B0959C /* MBComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBComposeViewController.swift; sourceTree = "<group>"; };
 		8DE09B3A1DFD3E3000F00DB7 /* 麦霸微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "麦霸微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE09B3D1DFD3E3000F00DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE09B441DFD3E3000F00DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D367F341E18FB7000B0959C /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				8D367F351E18FBB400B0959C /* MBComposeViewController.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
 		8DE09B311DFD3E3000F00DB7 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +156,7 @@
 				8DE09B551DFD543B00F00DB7 /* Main */,
 				8DE09B541DFD543B00F00DB7 /* Home */,
 				8DE09B561DFD543B00F00DB7 /* Message */,
+				8D367F341E18FB7000B0959C /* Compose */,
 				8DE09B531DFD543B00F00DB7 /* Discover */,
 				8DE09B571DFD543B00F00DB7 /* Profile */,
 			);
@@ -235,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE09B921DFD68C100F00DB7 /* Bundle+Extensions.swift */,
+				8D367F321E18F65400B0959C /* UIBarButtonItem+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D367F361E18FBB400B0959C /* MBComposeViewController.swift in Sources */,
 				8DE09B8C1DFD59CE00F00DB7 /* UIColor+CZAddition.m in Sources */,
 				8DE09B851DFD59CE00F00DB7 /* NSArray+Log.m in Sources */,
 				8DE09B931DFD68C100F00DB7 /* Bundle+Extensions.swift in Sources */,
@@ -325,6 +340,7 @@
 				8DE09B8B1DFD59CE00F00DB7 /* UIButton+CZAddition.m in Sources */,
 				8DE09B8E1DFD59CE00F00DB7 /* UIScreen+CZAddition.m in Sources */,
 				8DE09B641DFD554B00F00DB7 /* MBDiscoverViewController.swift in Sources */,
+				8D367F331E18F65400B0959C /* UIBarButtonItem+Extensions.swift in Sources */,
 				8DE09B871DFD59CE00F00DB7 /* NSObject+CZRuntime.m in Sources */,
 				8DE09B601DFD552600F00DB7 /* MBHomeViewController.swift in Sources */,
 				8DE09B3E1DFD3E3000F00DB7 /* AppDelegate.swift in Sources */,
