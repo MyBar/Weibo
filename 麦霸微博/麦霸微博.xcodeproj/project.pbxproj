@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D367F331E18F65400B0959C /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D367F321E18F65400B0959C /* UIBarButtonItem+Extensions.swift */; };
 		8D367F361E18FBB400B0959C /* MBComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D367F351E18FBB400B0959C /* MBComposeViewController.swift */; };
+		8D367F391E19020E00B0959C /* MBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D367F381E19020E00B0959C /* MBDemoViewController.swift */; };
 		8DE09B3E1DFD3E3000F00DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B3D1DFD3E3000F00DB7 /* AppDelegate.swift */; };
 		8DE09B451DFD3E3000F00DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE09B441DFD3E3000F00DB7 /* Assets.xcassets */; };
 		8DE09B5A1DFD54B200F00DB7 /* MBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE09B591DFD54B200F00DB7 /* MBMainViewController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		8D367F321E18F65400B0959C /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		8D367F351E18FBB400B0959C /* MBComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBComposeViewController.swift; sourceTree = "<group>"; };
+		8D367F381E19020E00B0959C /* MBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBDemoViewController.swift; sourceTree = "<group>"; };
 		8DE09B3A1DFD3E3000F00DB7 /* 麦霸微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "麦霸微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE09B3D1DFD3E3000F00DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE09B441DFD3E3000F00DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 				8D367F351E18FBB400B0959C /* MBComposeViewController.swift */,
 			);
 			path = Compose;
+			sourceTree = "<group>";
+		};
+		8D367F371E1901C100B0959C /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				8D367F381E19020E00B0959C /* MBDemoViewController.swift */,
+			);
+			path = "测试";
 			sourceTree = "<group>";
 		};
 		8DE09B311DFD3E3000F00DB7 = {
@@ -185,6 +195,7 @@
 				8DE09B591DFD54B200F00DB7 /* MBMainViewController.swift */,
 				8DE09B5B1DFD54E200F00DB7 /* MBNavigationController.swift */,
 				8DE09B5D1DFD54FB00F00DB7 /* MBBaseViewController.swift */,
+				8D367F371E1901C100B0959C /* 测试 */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -325,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D367F391E19020E00B0959C /* MBDemoViewController.swift in Sources */,
 				8D367F361E18FBB400B0959C /* MBComposeViewController.swift in Sources */,
 				8DE09B8C1DFD59CE00F00DB7 /* UIColor+CZAddition.m in Sources */,
 				8DE09B851DFD59CE00F00DB7 /* NSArray+Log.m in Sources */,

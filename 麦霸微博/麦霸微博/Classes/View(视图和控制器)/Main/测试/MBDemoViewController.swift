@@ -1,14 +1,14 @@
 //
-//  MBHomeViewController.swift
+//  MBDemoViewController.swift
 //  麦霸微博
 //
-//  Created by lijingui2010 on 2016/12/11.
-//  Copyright © 2016年 MyBar. All rights reserved.
+//  Created by lijingui2010 on 2017/1/1.
+//  Copyright © 2017年 MyBar. All rights reserved.
 //
 
 import UIKit
 
-class MBHomeViewController: MBBaseViewController {
+class MBDemoViewController: MBBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,21 +21,19 @@ class MBHomeViewController: MBBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func showFriends() {
+    func showNext() {
         let vc = MBDemoViewController()
         
         navigationController?.pushViewController(vc, animated: true)
         
     }
-    
 }
 
-extension MBHomeViewController {
+extension MBDemoViewController {
     
     override func setupUI() {
         super.setupUI()
         
-        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFriends))
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", target: self, action: #selector(showNext))
     }
-    
 }
